@@ -48,6 +48,31 @@ Para la segunda fase, se registraron medidas en el osciloscopio, en el cual se v
 
 ![img1_senoidal_osc](https://github.com/user-attachments/assets/f4737cbc-ff1a-4256-b855-bf88df0ea100)
 
+En esta imagen se puede visualizar la forma de onda observada para el caso donde la señal de información es una senoidal. Al cambiar la configuración para obtener una onda cuadrada, se observó lo siguiente en el osciloscopio:
+
+![img1_cuadrada_osc](https://github.com/user-attachments/assets/20092ceb-5840-4207-a916-472b32c8f170)
+![img2_cuadrada_osc](https://github.com/user-attachments/assets/15db9028-08e9-45f5-ad2a-f469c5a32b74)
+
+Como puede observarse en la imagen, la amplitud de la onda varía de acuerdo al coeficiente de modulación.
+
+Finalmente, se utilizó uno de los audios de prueba suministrados, para poder observar el comportamiento de la modulación en una señal de audio.
+
+![img1_audio_osc](https://github.com/user-attachments/assets/853d879f-9ce7-45e1-a1b3-2543fda95ca6)
+<img src="https://github.com/user-attachments/assets/932c58a6-f51d-4f4b-a05b-28ba444ae26b" width="1449">
+Así, se ve como varía la amplitud de la onda a medida que se va transmitiendo el sonido
+
+**Tercera fase**  
+
+#### Tabla comparativa
+Para esta tercera fase, se realizó un cuadro comparativo con el objetivo de apreciar las diferencias que existen en el dominio del frecuencia, entre la señal moduladora senoidal y otros tipos de ondas moduladoras como la cuadrada, y la señal de audio. Para la frecuencia de mensaje se definió un valor para todos los casos de 7.2 kHz.
+
+|Señal | Análisis |
+|-----------|-----------|
+| Senoidal | <img width="768" height="434.4" alt="img2_senoidal_gnuradio" src="https://github.com/user-attachments/assets/7ab4585f-bb16-4566-b141-b06d78fd2846" /> <img src="https://github.com/user-attachments/assets/bbf07d44-24bc-4866-b028-f9351df21778" width="768">|
+| Cuadrada |<img width="768" alt="img2_cuadrada_gnuradio" src="https://github.com/user-attachments/assets/bd25514a-f36c-4d7f-a0bb-997008e3b9f1" /> <img src="https://github.com/user-attachments/assets/a2051e8f-64d2-4fe8-86ee-2b05fb17fa46" width="768">| 
+| Audio |<img width="768" alt="img1_audio_gnuradio" src="https://github.com/user-attachments/assets/48f6fba3-ef7e-4097-b590-456e4f666879" /> <img src="https://github.com/user-attachments/assets/87e5366e-0797-4c17-82e1-dee7a2f386ed" width="768">| 
+
+
 ### Referencias
 * J. G. Proakis y M. Salehi, Fundamentals of communication systems. Prentice Hall, 2014.
 * Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones, Universidad Industrial de Santander, “Lesson 1-7 - Passband Transmission". https://lms.uis.edu.co/ava/pluginfile.php/535767/mod_folder/content/0/Lesson_1_7_Passband%20Transmission.pdf
