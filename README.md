@@ -68,10 +68,24 @@ Para esta tercera fase, se realizó un cuadro comparativo con el objetivo de apr
 
 |Señal | Análisis |
 |-----------|-----------|
-| Senoidal | <img width="768" height="434.4" alt="img2_senoidal_gnuradio" src="https://github.com/user-attachments/assets/7ab4585f-bb16-4566-b141-b06d78fd2846" /> <img src="https://github.com/user-attachments/assets/bbf07d44-24bc-4866-b028-f9351df21778" width="768">|
-| Cuadrada |<img width="768" alt="img2_cuadrada_gnuradio" src="https://github.com/user-attachments/assets/bd25514a-f36c-4d7f-a0bb-997008e3b9f1" /> <img src="https://github.com/user-attachments/assets/a2051e8f-64d2-4fe8-86ee-2b05fb17fa46" width="768">| 
-| Audio |<img width="768" alt="img1_audio_gnuradio" src="https://github.com/user-attachments/assets/48f6fba3-ef7e-4097-b590-456e4f666879" /> <img src="https://github.com/user-attachments/assets/87e5366e-0797-4c17-82e1-dee7a2f386ed" width="768">| 
+| Senoidal | <img width="768" height="434.4" alt="img2_senoidal_gnuradio" src="https://github.com/user-attachments/assets/7ab4585f-bb16-4566-b141-b06d78fd2846" /> <img src="https://github.com/user-attachments/assets/bbf07d44-24bc-4866-b028-f9351df21778" width="768"> <br> Se reconoce que la magnitud del espectro de una señal senoidal está descrita por $X(\omega)= A\pi\left[ \delta(\omega-\omega_0) +\delta(\omega+\omega_0)\right]$ . Aún así, en la representación en el analizador de espectros se observa un impulso adicional en $\omega=0$, lo cual significa que esta señal tiene una componente DC distinta de cero|
+| Cuadrada |<img width="768" alt="img2_cuadrada_gnuradio" src="https://github.com/user-attachments/assets/bd25514a-f36c-4d7f-a0bb-997008e3b9f1" /> <img src="https://github.com/user-attachments/assets/a2051e8f-64d2-4fe8-86ee-2b05fb17fa46" width="768"> <br> Por su parte, la onda cuadrada puede definirse como una suma infinita de senoidales, por este motivo sus componentes téoricamente serán infinitas y representaran sendos impulsos que decaen simétricamente a medida que se aleja de la frecuencia central. Esto es distinto a la onda senoidal pura, la cual solo tiene dos componentes a una frecuencia definida. Formalmente, la onda cuadrada se define como: $x(t)=\frac{4}{\pi}\sum_{k=1}^{\infty }\frac{sen(2\pi(2k-1)ft))}{2k-1}$| 
+| Audio |<img width="768" alt="img1_audio_gnuradio" src="https://github.com/user-attachments/assets/48f6fba3-ef7e-4097-b590-456e4f666879" /> <img src="https://github.com/user-attachments/assets/87e5366e-0797-4c17-82e1-dee7a2f386ed" width="768"> <br> Para esta forma de onda, se puede observar que su forma es compleja debido a los diversos componentes que posee, teniendo en cuenta todos los instrumentos utilizados para realizar la canción. Esto contrasta con respecto a la señal senoidal, la cual es más simple debido a los únicos dos componentes que definen su espectro. En la señal se puede observar su frecuencia central a 100 MHz, y un ancho de 44 kHz, el cual es el ancho de banda típico usado en los archivos de música digitales. | 
+<br>
 
+Al observar las distintas formas de onda en el dominio del tiempo en el osciloscopio, se puede observar, teniendo una vista más amplia de la señal, el tipo de onda que se estaba ingresando. Para poder observar de forma directa el efecto de modulación que se estaba presentando en cada caso, fue necesario ajustar la escala de tiempo-horizontal, debido a las altas frecuencias de las señales de entrada.
+
+Con respecto a los espectros de las señales observados en el analizador, puede verse que la forma de onda que ocupa el mayor ancho de banda, es la onda cuadrada, dado que teóricamente se extiende de forma infinita.
+
+El espectro resultante de la onda cuadrada contiene más componentes armónica que la señal senoidal, dado que, como se dijo anteriormente, la onda cuadrada se define como la sumatoria de distintas ondas senoidales de diferente amplitud.
+
+Con respecto a las dificultades presentadas al momento de realizar la practica, se presentaron principalmente al momento de visualizar las señales en el osciloscopio, dado que había que configurar la escala de tiempo adecuadamente para ver el efecto de la modulación de la amplitud de la señal. No se presentaron problemas de saturación ni al momento de ajustar la ganancia, dado que con los parámetros configurados inicialmente fue posible visualizar las señales directamente sin necesidad de hacer uso de un atenuador. Se presentaron algunos problemas al visualizar el espectro de las señales, y ver su concordancia con sus gráfica equivalentes proporcionadas por GNURadio.
+
+### Conclusiones
+
+- Una de las principales ventajas del AM está relacionado con la facilidad con la que se pueden enviar señales a partir de este procedimiento, dado que es solo realizar una multiplicación entre la señal portadora y la señal de información.
+- Una de las principales desventajas en ciertos casos, es que la modulación en amplitud puede aumentar la amplitud total de la señal, elevando el nivel de voltaje a niveles que podrían ser perjudiciales para el correcto funcionamiento de los equipos y de las personas.
+- Las siguientes etapas de desarrollo de este proyecto podrían estar enfocadas en que el sistema tenga la capacidad de enviar señales de audio en tiempo real, como ocurre por ejemplo en las emisoras de radio; y a su vez poder transmitir señales a más largas distancias utilizando las antenas apropiadas que garanticen la potencia de salida requerida del sistema.
 
 ### Referencias
 * J. G. Proakis y M. Salehi, Fundamentals of communication systems. Prentice Hall, 2014.
