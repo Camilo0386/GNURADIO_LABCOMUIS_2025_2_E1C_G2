@@ -84,7 +84,8 @@ Con respecto a las dificultades presentadas al momento de realizar la practica, 
 ### Conclusiones
 
 - Una de las principales ventajas del AM está relacionado con la facilidad con la que se pueden enviar señales a partir de este procedimiento, dado que es solo realizar una multiplicación entre la señal portadora y la señal de información.
-- Una de las principales desventajas en ciertos casos, es que la modulación en amplitud puede aumentar la amplitud total de la señal, elevando el nivel de voltaje a niveles que podrían ser perjudiciales para el correcto funcionamiento de los equipos y de las personas.
+- Una de las principales desventajas en ciertos casos, es que la modulación en amplitud puede aumentar la amplitud total de la señal, elevando el nivel de voltaje a niveles que podrían ser perjudiciales para el correcto funcionamiento de los equipos y poner en riesgo potencial la salud de las personas.
+- Otra de las desventajas de este tipo de modulación está relacionada con la saturación que presenta la señal debido a un ajuste incorrecto de la ganancia de la señal, así, esto provocaría que la forma de la onda cambiara afectando significativamente la calidad de la información que se quiere transmitir.
 - Las siguientes etapas de desarrollo de este proyecto podrían estar enfocadas en que el sistema tenga la capacidad de enviar señales de audio en tiempo real, como ocurre por ejemplo en las emisoras de radio; y a su vez poder transmitir señales a más largas distancias utilizando las antenas apropiadas que garanticen la potencia de salida requerida del sistema.
 
 ### Referencias
