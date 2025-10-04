@@ -19,7 +19,7 @@ En esta quinta práctica de laboratorio, se estudió el procedimiento para dise�
 
 **Palabras clave**:Bi-Quad Antenna, Matlab, Antenna Designer, VNA  
 
-## Introducción
+### Introducción
 Una antena es una estructura metálica que captura y/o transmite ondas electromagnéticas. Las primera antenas fueron construidas en 1886 por el físico alemán Heinrich Hertz, cuando comprobó la existencia de las ondas electromagnéticas. La importancia de las antenas es innegable, debido a que son un componente fundamental en todo sistema de comunicaciones, siendo el instrumento por medio del cual se puede transmitir y recibir la información.
 
 De esta forma, la antena construida por Hertz, la cual es denominada como una antena dipolo, puede ser analizada de forma equivalente, a como si fuera un circuito en paralelo entre un inductor y un capacitor. De esta forma, si se abren las placas del capacitor y se reemplaza al inductor por la propia inductancia del cable, se obtiene la antena dipolo. Eso hace que el análisis del comportamiento de la antena, sea muy parecido al análisis del comportamiento de un circuito resonante LC.
