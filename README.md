@@ -60,6 +60,39 @@ Gráfico de patrón de radiación:
 
 Observando el gráfico del 3D pattern, se observan dos lóbulos principales, radiando de forma perpendicular al reflector.
 
+De esta forma, las cantidades relevantes definidas para el diseño de la antena están consignadas en la siguiente tabla
+|            |          |
+|-----------|-----------|
+| Frecuencia |915 MHz|
+| Dimensiones reflector |10x20 cm |
+| Longitud de lado (L) |0.086 m | 
+| Spacing del reflector |0.04 m |
+
+**Segunda fase**
+
+Posteriormente, se realizó la construcción de la antena bi-quad, utilizando para este propósito alambre de cobre 16 AWG, alicates para darle la forma a la antena, una regla para medir las longitudes de lado de la antena, y un cautin para soldar los puntos de conexión y fijar la antena al conector SMA y el reflector.
+
+<img width="720" src="https://github.com/user-attachments/assets/36a72012-8931-4cc0-b181-3388d5721e55" />
+
+**Tercera fase**
+Para esta fase, se hizo uso de un analizador vectorial de redes (VNA), con el objetivo de poder medir el parámetro S11 experimentalmente de la antena construida. Los resultados fueron los siguientes:
+
+<img width="1348" src="https://github.com/user-attachments/assets/678da6ec-706c-4099-bde4-45dcf44caab3" />
+
+Como se puede observar, hay diferencias respectado a lo observado en Matlab, teniendo en este caso una frecuencia de 775 MHz, y una potencia de -7.803 dB. En comparación con los 915 MHz y -13.69 dB observados en Matlab.          
+
+
+
+Posteriormente se utilizo un generador de señales conectado a una antena Yagi transmisora, con el objetivo de transmitir señales a esta frecuencia hallada con el VNA (775 MHz). De esta forma, se realizó una medición de la potencia observada en el analizador de espectros:
+
+<img width="1348" src="https://github.com/user-attachments/assets/ec1c3863-6e2c-4f61-8a8a-906f1149634a" />
+
+A su vez se realizó una nueva medición, pero en este caso utilizando una antena de RF elaborada en PCB, para medir su potencia a esta frecuencia, obteniendo los siguientes resultados en el analizador de espectros:
+
+<img width="1348" src="https://github.com/user-attachments/assets/8ff73864-0691-456c-aeb3-c37ba05f9a59" />
+
+
+
 
 ### Referencias
 * C. G. Manning, “What is an antenna? - NASA,” NASA, Sep. 26, 2023. https://www.nasa.gov/general/what-is-an-antenna/
