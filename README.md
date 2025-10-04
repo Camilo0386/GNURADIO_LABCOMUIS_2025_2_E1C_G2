@@ -15,7 +15,7 @@ Asimismo, los autores asumen plena responsabilidad por la información contenida
 ***
 ## Contenido
 ### Resumen
-En esta quinta práctica de laboratorio, se estudió el procedimiento para diseñar y crear una antena bi-quad, la cual es utilizada para distintas aplicaciones como Wi-Fi y el internet de las cosas (IoT). De esta forma, para realizar el diseño, se hicieron unos cálculos previos, con el objetivo de definir las dimensiones de la antena, dependiendo de la frecuencia de operación específica elegida. Posteriormente, se utilizó Matlab utilizando la aplicación Antenna Designer, con el objetivo de visualizar gráfica de interés como S11 o el patrón de radiación, y así definir de forma precisa las dimensiones apropiadas de la antena. Finalmente, se realizó el proceso de construcción de la antena, y se realizaron mediciones experimentales tales como el cálculo de la gráfica de S11, visualización del espectro y comprobación de la correcta direccionalidad de la antena.  
+En esta quinta práctica de laboratorio, se estudió el procedimiento para diseñar y crear una antena bi-quad, la cual es utilizada para distintas aplicaciones como Wi-Fi y el internet de las cosas (IoT). De esta forma, para realizar el diseño, se hicieron unos cálculos previos, con el objetivo de definir las dimensiones de la antena, dependiendo de la frecuencia de operación específica elegida. Posteriormente, se utilizó Matlab utilizando la aplicación Antenna Designer, con el objetivo de visualizar gráfica de interés como S11 o el patrón de radiación, y así definir de forma precisa las dimensiones apropiadas de la antena. Finalmente, se realizó el proceso de construcción, y se realizaron mediciones experimentales tales como el cálculo de la gráfica de S11, visualización del espectro y comprobación de su correcta direccionalidad.  
 
 **Palabras clave**:Bi-Quad Antenna, Matlab, Antenna Designer, VNA  
 
@@ -27,6 +27,39 @@ De esta forma, la antena construida por Hertz, la cual es denominada como una an
 <img width="676" height="296" alt="imagen_dipole_ant" src="https://github.com/user-attachments/assets/d25875c9-94d5-46d3-9304-01b132b694ad" />
 
 Las antenas tiene diversas formas y tamaños, dependiendo de la aplicación que se requiera.
+
+### Procedimiento
+
+**Primera fase**
+
+La primera fase consistió en realizar el diseño de las dimensiones de la antena, y después ajustar estas dimensiones de forma precisa a través de la app Antenna Designer en Matlab.
+
+De esta forma, se seleccionó una frecuencia de interés de 915 MHz. Para calcular la longitud de onda:  
+
+$\lambda=\frac{c}{f}=\frac{3\times 10^{8}}{915\times 10^{6}}= 0.328\text{ m} = 32.8 \text{ cm}$  
+
+Y la aproximación de los lados de cada cuadrado:  
+
+$L=\frac{\lambda}{4}=\frac{0.328}{4}=0.082 \text{ m}=8.2 \text{ cm}$
+
+A su vez, se definió una distancia al reflector inicial igual a $\lambda/8$
+
+$\frac{\lambda}{8}=\frac{0.328}{8}=0.041 \text{ m}=4.1 \text{ cm}$
+
+Así, estos valores obtenidos se ingresaron en la app Antenna Designer de Matlab, incluida las dimensiones del reflector, que para este caso en particular fueron de 10x20 cm.
+
+<img width="1364" height="593" alt="ini_design_bq_matlab" src="https://github.com/user-attachments/assets/c7c4aa13-d1d5-4bac-a61f-8de05a03e920" />
+
+De esta forma, se ajustaron levemente estos parámetros con el fin de obtener la frecuencia centrada en 915 MHz al momento de observar las gráficas de S11 y el patrón de radiación:
+
+Gráfico de S11:
+<img width="1363" height="594" alt="graph_S11" src="https://github.com/user-attachments/assets/53177e5f-197a-47c6-bdc2-577735080f7d" />
+
+Gráfico de patrón de radiación:
+<img width="1348" height="929" alt="graph_3d_pattern" src="https://github.com/user-attachments/assets/d9e7d9cb-04b0-4033-81ed-2d98f27c6863" />
+
+Observando el gráfico del 3D pattern, se observan dos lóbulos principales, radiando de forma perpendicular al reflector.
+
 
 ### Referencias
 * C. G. Manning, “What is an antenna? - NASA,” NASA, Sep. 26, 2023. https://www.nasa.gov/general/what-is-an-antenna/
