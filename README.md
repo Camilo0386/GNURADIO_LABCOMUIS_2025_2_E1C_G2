@@ -94,7 +94,8 @@ A su vez se realizó una nueva medición, pero en este caso utilizando una anten
 
 ### Conclusiones
 
-- Observando las gráficas del coeficiente de reflexión S11, obtenidas en Matlab, y la obtenida a partir del VNA, se puede observar que poseen diferencias significativas con respecto a la frecuencia de resonancia y la potencia estimada en esta frecuencia,
+- Observando las gráficas del coeficiente de reflexión S11, obtenidas en Matlab, y la obtenida a partir del VNA, se puede observar que poseen diferencias significativas con respecto a la frecuencia de resonancia y la potencia estimada en esta frecuencia, en donde se obtuvo para el caso del diseño en Matlab, una frecuencia objetivo de 915 MHz, obteniendo en la práctica con la antena una frecuencia de 775 MHz, medidos en el VNA. Para el caso de la potencia obtenida, se obtuvo -13.5379 dB y -7.803 dB respectivamente.
+- Algunas de las principales razones por las cuales hay una diferencia considerable entre los resultados obtenidos al realizar el diseño en Matlab, y los medidos experimentalmente con la antena, tienen que ver principalmente con el proceso de fabricación, debido a que no se contó con instrumentos que permitieran realizar por ejemplo una medición precisa de la longitud de los lados de la antena, lo cual es fundamental dado que una pequeña desviación de algunos milímetros puede tener un efecto de un desfase del orden de MHz para la frecuencia de resonancia. Otros aspectos importante en la fabricación como darle una forma cuadrada con angulos rectos al alambre de cobre y la correcta ejecución de los puntos de soldadura para fijar la antena al reflector, también son puntos a considerar que pudieron afectar el funcionamiento esperado de la antena.
 
 
 ### Referencias
