@@ -24,9 +24,12 @@ Una antena es una estructura metálica que captura y/o transmite ondas electroma
 
 De esta forma, la antena construida por Hertz, la cual es denominada como una antena dipolo, puede ser analizada de forma equivalente, a como si fuera un circuito en paralelo entre un inductor y un capacitor. De esta forma, si se abren las placas del capacitor y se reemplaza al inductor por la propia inductancia del cable, se obtiene la antena dipolo. Eso hace que el análisis del comportamiento de la antena, sea muy parecido al análisis del comportamiento de un circuito resonante LC.
 
-<img width="676" height="296" alt="imagen_dipole_ant" src="https://github.com/user-attachments/assets/d25875c9-94d5-46d3-9304-01b132b694ad" />
+<img width="480" alt="imagen_dipole_ant" src="https://github.com/user-attachments/assets/d25875c9-94d5-46d3-9304-01b132b694ad" />
 
-Las antenas tiene diversas formas y tamaños, dependiendo de la aplicación que se requiera.
+Las antena tienen distintas propiedades que las definen, y que las caracterizan, tales como su ancho de banda, su ganancia intrínseca, el área efectiva, su eficiencia y su patrón de radiación, entre muchas otras propiedades, las cuales varían para cada antena y aplicación. De esta forma, se tienen diferentes tipos de antenas, según su forma y tamaño, tales como por ejemplo: antena dipolo, antena parabólica, antena Yagi o la realizada en la práctica como la antena bi-quad.
+
+De esta forma, las antenas biquad son un tipo de antena la cual tienen forma de dos cuadrados de alambre de cobre unidos entre sí por un punto de unión de soldadura, y típicamente esta antena está fijada a un reflector normalmente también de cobre, con el objetivo de añadir una direccionalidad a la antena. Usualmente se usa para la frecuencia de 2.4 GHZ del WiFi, y para aplicaciones relacionadas con el internet de las cosas (IoT).
+
 
 ### Procedimiento
 
@@ -96,6 +99,7 @@ A su vez se realizó una nueva medición, pero en este caso utilizando una anten
 
 - Observando las gráficas del coeficiente de reflexión S11, obtenidas en Matlab, y la obtenida a partir del VNA, se puede observar que poseen diferencias significativas con respecto a la frecuencia de resonancia y la potencia estimada en esta frecuencia, en donde se obtuvo para el caso del diseño en Matlab, una frecuencia objetivo de 915 MHz, obteniendo en la práctica con la antena una frecuencia de 775 MHz, medidos en el VNA. Para el caso de la potencia obtenida, se obtuvo -13.5379 dB y -7.803 dB respectivamente.
 - Algunas de las principales razones por las cuales hay una diferencia considerable entre los resultados obtenidos al realizar el diseño en Matlab, y los medidos experimentalmente con la antena, tienen que ver principalmente con el proceso de fabricación, debido a que no se contó con instrumentos que permitieran realizar por ejemplo una medición precisa de la longitud de los lados de la antena, lo cual es fundamental dado que una pequeña desviación de algunos milímetros puede tener un efecto de un desfase del orden de MHz para la frecuencia de resonancia. Otros aspectos importante en la fabricación como darle una forma cuadrada con angulos rectos al alambre de cobre y la correcta ejecución de los puntos de soldadura para fijar la antena al reflector, también son puntos a considerar que pudieron afectar el funcionamiento esperado de la antena.
+- Se comprobó la direccionalidad de la antena, al observar que la mayor potencia se obtenía en la dirección previamente observada en el patrón de radiación de Matlab, que para este caso, fue orientando la antena directamente a la antena transmisora, de forma paralela al reflector.
 
 
 ### Referencias
