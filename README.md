@@ -74,7 +74,8 @@ Posteriormente, se realizó la construcción de la antena bi-quad, utilizando pa
 
 <img width="720" src="https://github.com/user-attachments/assets/36a72012-8931-4cc0-b181-3388d5721e55" />
 
-**Tercera fase**
+**Tercera fase**  
+
 Para esta fase, se hizo uso de un analizador vectorial de redes (VNA), con el objetivo de poder medir el parámetro S11 experimentalmente de la antena construida. Los resultados fueron los siguientes:
 
 <img width="1348" src="https://github.com/user-attachments/assets/678da6ec-706c-4099-bde4-45dcf44caab3" />
@@ -91,7 +92,9 @@ A su vez se realizó una nueva medición, pero en este caso utilizando una anten
 
 <img width="1348" src="https://github.com/user-attachments/assets/8ff73864-0691-456c-aeb3-c37ba05f9a59" />
 
+### Conclusiones
 
+- Observando las gráficas del coeficiente de reflexión S11, obtenidas en Matlab, y la obtenida a partir del VNA, se puede observar que poseen diferencias significativas con respecto a la frecuencia de resonancia y la potencia estimada en esta frecuencia,
 
 
 ### Referencias
